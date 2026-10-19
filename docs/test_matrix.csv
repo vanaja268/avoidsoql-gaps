@@ -1,0 +1,9 @@
+Files,Area,Expected validation,Priority
+"G01-G02,G14",InvocableVariable fields,Check whether violations are raised; if fix offered verify deployment and Flow compatibility; do not assume property allowed,High
+G03-G05,AuraEnabled exemption,Check annotated field exemption and ordinary field eligibility; verify LWC/Aura contract,High
+"G06-G08,G15",JSON DTO serialization/deserialization,Capture JSON before/after AI Fix; deploy and run APFG15 tests,High
+G09-G10,Mixed global/public batch,Select two public and two global issues; per stated spec entire batch rejected and zero queued,High
+G11-G12,Public/global controls,Public eligible; global ineligible; test UI and direct API,High
+G13,Unit test suppression,Repeat scans with Default Display Suppress and compare,Medium
+Manual,Comma-separated field declarations,Only attempt if validated by Apex compiler; excluded from deployable suite,Exploratory
+Manual,AuraEnabled(cacheable=true),"Applies to Apex methods, not fields; validate annotated cacheable methods separately",Exploratory
